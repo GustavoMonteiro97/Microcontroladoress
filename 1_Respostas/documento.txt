@@ -1,12 +1,22 @@
-Questionário 1
+QUESTIONÁRIO 1
 
 1. O que são sistemas embarcados?
+
 Sistemas embarcados são sistemas independentes, mais simples que computadores, encarregados de executar uma função pré-determinada (codificada) na qual são executados repetidas vezes. 
 
-2.O que são sistemas microprocesssados?
+2. O que são sistemas microprocesssados?
 
-3.Apresente aplicações de sistemas embarcados: (a) para a indústria automotiva; (b) para eletrodomésticos; (c) para automação industrial.
+O microprocessador é a porção do sistema que realmente executa a tarefa desejada pelo usuário. Essas tarefas são realizadas especificando uma sequência de operações na forma de um programa.
 
-4.Cite arquiteturas possíveis e as diferenças entre elas.
+3. Apresente aplicações de sistemas embarcados: (a) para a indústria automotiva; (b) para eletrodomésticos; (c) para automação industrial.
 
-5.Por que usamos o MSP430 na disciplina, ao invés de outro microcontrolador?
+(a) Substituição dos tradicionais sistemas mecânicos por sistemas eletrônicos.
+(b) Eletrodomésticos contam com sistemas eficazes para garantir mais conforto e praticidade aos usuários. No micro-ondas, é possível realizar diversas funções predefinidas pelo seu usuário.
+(c) Processamento de imagens e integração de padrões de comunicação de dados que visam facilitar o fluxo das informações nos processos de produção.
+
+4. Cite arquiteturas possíveis e as diferenças entre elas.
+
+
+5. Por que usamos o MSP430 na disciplina, ao invés de outro microcontrolador?
+
+Porque os controladores de linha de valor MSP430 são mais baratos do que os controladores ATMega utilizados na plataforma Arduino.
