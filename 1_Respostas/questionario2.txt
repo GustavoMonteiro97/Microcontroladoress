@@ -1,14 +1,19 @@
-1. Quais as diferen�as entre os barramentos de dados e de endere�os?
+1. Quais as diferenças entre os barramentos de dados e de endereços?
 
-2. Quais s�o as diferen�as entre as mem�rias RAM e ROM?
+	O barramento de dados transmite dados entre as unidades, por exemplo, um microprocessador de oito bits precisa de um barramento de dados de 8 linhas para que consiga transmitir dados de oito bits em paralelo. É possível também que um microprocessador de 64 bits seja formado por 8 linhas mas seriam necessárias oito transmissões sucessivas tornando o sistema lento.
+	O barramento de endereços tem a função de conduzir endereços, ou seja, selecionar a origem e o destino de sinais transmitidos de outros barramentos ou em uma de suas linhas. 
 
-3. Considere o c�digo abaixo:
+2. Quais são as diferenças entre as memórias RAM e ROM?
+
+	Um chip ROM é um meio de armazenamento não volátil, o que significa que não requer uma fonte de energia constante para reter a informação armazenada nele. Já um chip de RAM é volátil, o que significa que perde qualquer informação que está segurando quando a energia é desligada. Outra diferença é que um chip RAM pode armazenar múltiplos gigabytes de informação, que vai de 1 GB até 256 GB por chip. Em contrapartida, um chip ROM armazena de 4 MB a 8 MB por chip. 
+
+3. Considere o código abaixo:
 
 #include <stdio.h>
 int main(void)
 {
 	int i;
-	printf("Insira um n�mero inteiro: ");
+	printf("Insira um número inteiro: ");
 	scanf("%d", &i);
 	if(i%2)
 		printf("%d eh impar.\n");
@@ -17,14 +22,20 @@ int main(void)
 	return 0;
 }
 
-Para este c�digo, responda: 
+Para este código, responda: 
 
-(a) A vari�vel i � armazenada na mem�ria RAM ou ROM? Por qu�? 
+(a) A variável i é armazenada na memória RAM ou ROM? Por quê? 
 
-(b) O programa compilado a partir deste c�digo � armazenado na mem�ria RAM ou ROM? Por qu�?
+	Memória RAM, por que a variável é capaz de ser modificada, no caso verifica-se na condição if se o número inserido é par ou ímpar.
 
-4. Quais s�o as diferen�as, vantagens e desvantagens das arquiteturas Harvard e Von Neumann?
+(b) O programa compilado a partir deste código é armazenado na memória RAM ou ROM? Por quê?
 
-5. Considere a vari�vel inteira i, armazenando o valor 0x8051ABCD. Se i � armazenada na mem�ria a partir do endere�o 0x0200, como ficam este byte e os seguintes, considerando que a mem�ria �: (a) Little-endian; (b) Big-endian.
+	
 
-6. Sabendo que o processador do MSP430 tem registradores de 16 bits, como ele soma duas vari�veis de 32 bits?
+4. Quais são as diferenças, vantagens e desvantagens das arquiteturas Harvard e Von Neumann?
+
+	Na arquitetura Von neumann, o computador possui sistema de armazenamento único (memória) para armazenar dados, bem como programa a ser executado. Na Harvard, o computador possui duas memórias separadas para armazenar dados e programas. Existe um único conjunto de barramentos de endereço ou dados entre CPU e memória na arquitetura Neumann, já na Harvard são dois conjuntos. A arquitetura Neumann é relativamente antiga e foi substituída pela Harvard nos computadores modernos.
+
+5. Considere a variável inteira i, armazenando o valor 0x8051ABCD. Se i é armazenada na memória a partir do endereço 0x0200, como ficam este byte e os seguintes, considerando que a memória é: (a) Little-endian; (b) Big-endian.
+
+6. Sabendo que o processador do MSP430 tem registradores de 16 bits, como ele soma duas variáveis de 32 bits?
