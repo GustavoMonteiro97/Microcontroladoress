@@ -75,16 +75,7 @@ RESULTADO: 11100001
 
 (f) Inverter o nibble mais significativo de a, e setar o nibble menos significativo de a.
 
-#include <stdio.h>
-#include <stdlib.h>
 
-int main(int argc, char *argv[])
-{
-  char c = 'a'; //a=01100001
-  c = c | 0x81;
-  printf("\n%c\n", c );
-  return 0;
-}
 
 2. Considerando a placa Launchpad do MSP430, escreva o código em C para piscar os dois LEDs ininterruptamente.
 
